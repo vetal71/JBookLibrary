@@ -20,11 +20,11 @@
                <children>
                   <BorderPane prefHeight="398.0" prefWidth="279.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                      <center>
-                        <TreeTableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                        <TreeTableView fx:id="tvCategory" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                           <columns>
-                            <TreeTableColumn prefWidth="75.0" text="Код" />
-                            <TreeTableColumn prefWidth="75.0" text="Наименование" />
-                            <TreeTableColumn prefWidth="75.0" text="Всего" />
+                            <TreeTableColumn fx:id="colId" prefWidth="75.0" text="Код" />
+                            <TreeTableColumn fx:id="colName" prefWidth="75.0" text="Наименование" />
+                            <TreeTableColumn fx:id="colCount" prefWidth="75.0" text="Всего" />
                           </columns>
                            <columnResizePolicy>
                               <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
