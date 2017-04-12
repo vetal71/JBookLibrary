@@ -1,6 +1,6 @@
 package com.dev.jbooklib.model;
 
-import com.dev.jbooklib.database.SQLiteConnection;
+import com.dev.jbooklib.database.DBConnection;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -12,9 +12,9 @@ public class LoginModel {
     Connection connection;
 
     public LoginModel() {
-        connection = SQLiteConnection.Connector();
+        connection = DBConnection.getConnection();
         if (connection == null) {
-            showError("Ошибка подключения к базе данных.");
+            showError("Ошибка подключения к базе данных.", "");
             System.exit(1);
         }
     }

@@ -8,18 +8,18 @@ import static com.dev.jbooklib.util.Contants.*;
  */
 public class MyUtils {
 
-    public static void showError(String msg) {
+    public static void showError(String header, String msg) {
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle(APP_NAME);
-        alert.setHeaderText(DIALOG_ERROR_CAPTION);
+        alert.setHeaderText(header);
         alert.setContentText(msg);
         alert.showAndWait();
     }
 
-    public static void showInfo(String msg) {
+    public static void showInfo(String header, String msg) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle(APP_NAME);
-        alert.setHeaderText(DIALOG_INFO_CAPTION);
+        alert.setHeaderText(header);
         alert.setContentText(msg);
         alert.showAndWait();
     }
